@@ -17,8 +17,11 @@ utilities:
     - webgrind
   redis:
     - redis
+
 utility-sources:
-  redis: https://github.com/dingo-d/redis-vvv-utility
+  redis: 
+    repo: https://github.com/dingo-d/redis-vvv-utility.git
+    branch: master
 ```
 
 The `core` utilities are there by default, and `redis` doesn't depend on them.
