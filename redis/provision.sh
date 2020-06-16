@@ -26,6 +26,7 @@ if [ ! -f redis-stable.tar.gz ]; then
   tar xvzf redis-stable.tar.gz && cd redis-stable
 fi
 # Check before executing make if it's already installed
+cd redis-stable
 make
 make test
 
