@@ -19,7 +19,7 @@ then
   apt-get --assume-yes install tcl;
 fi
 
-apt-get install -y pkg-config
+sudo apt-get install -y pkg-config
 
 echo "Getting latest Redis release"
 # Check if latest redis is downloaded, if not, download it
