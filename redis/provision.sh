@@ -32,7 +32,7 @@ make
 make test
 
 echo "Setting up default config at /usr/local/etc/redis.conf"
-cp /usr/local/etc/redis.conf.default /usr/local/etc/redis.conf
+sudo cp /home/vagrant/redis-stable/redis.conf /usr/local/etc/redis.conf
 
 mkdir -p /usr/local/var/db/redis
 
