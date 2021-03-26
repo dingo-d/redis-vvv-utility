@@ -24,6 +24,14 @@ utility-sources:
     branch: master
 ```
 
+### Versions
+
+* redis
+* redis-systemd
+
+The systemd version will build redis with systemd support. To build with systemd support, you'll need systemd 
+development libraries (such as libsystemd-dev on Debian/Ubuntu or systemd-devel on CentOS).
+
 The `core` utilities are there by default, and `redis` doesn't depend on them.
 
 Once you add it, be sure you re-provision your VVV with `vagrant reload --provision`.
