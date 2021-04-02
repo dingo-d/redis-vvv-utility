@@ -23,7 +23,7 @@ echo "Getting latest Redis release"
 # Check if latest redis is downloaded, if not, download it
 if [ ! -f redis-stable.tar.gz ]; then
   wget http://download.redis.io/redis-stable.tar.gz
-  tar xvzf redis-stable.tar.gz && cd redis-stable
+  tar xvzf redis-stable.tar.gz
 fi
 # Check before executing make if it's already installed
 cd redis-stable
