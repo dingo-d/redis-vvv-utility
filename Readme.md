@@ -1,15 +1,15 @@
-# Redis vvv utility
+# Redis VVV extension
 
-Redis utility for VVV
+A Redis extension for VVV
 
-This utility will set up [Redis](https://redis.io/) on your [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV).
+This extension will set up [Redis](https://redis.io/) on your [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV).
 
 ## Usage
 
-In your `vvv-customy.yml` file add under `utilities`:
+In your `config/config.yml` file add under `extensions`:
 
 ```yml
-utilities:
+extensions:
   core:
     - memcached-admin
     - opcache-status
@@ -18,7 +18,7 @@ utilities:
   redis:
     - redis
 
-utility-sources:
+extension-sources:
   redis: 
     repo: https://github.com/dingo-d/redis-vvv-utility.git
     branch: master
@@ -32,6 +32,6 @@ utility-sources:
 The systemd version will build redis with systemd support. To build with systemd support, you'll need systemd 
 development libraries (such as libsystemd-dev on Debian/Ubuntu or systemd-devel on CentOS).
 
-The `core` utilities are there by default, and `redis` doesn't depend on them.
+The `core` extensions are there by default, and `redis` doesn't depend on them.
 
-Once you add it, be sure you re-provision your VVV with `vagrant reload --provision`.
+Once you add it, be sure you re-provision your VVV with `vagrant up --provision`.
